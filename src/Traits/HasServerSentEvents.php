@@ -14,7 +14,7 @@ trait HasServerSentEvents
      *
      * @return null|class-string<Response>
      */
-    public function resolveResponseClass(): ?string
+    public function resolveResponseClass(): null|string
     {
         return SSEResponse::class;
     }

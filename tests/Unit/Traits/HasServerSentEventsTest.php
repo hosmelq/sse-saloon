@@ -6,7 +6,7 @@ use HosmelQ\SSE\Saloon\Responses\SSEResponse;
 use HosmelQ\SSE\Saloon\Tests\TestSupport\TestRequest;
 
 it('returns default headers for Server-Sent Events', function (): void {
-    $headers = (new TestRequest())->getDefaultHeaders();
+    $headers = new TestRequest()->getDefaultHeaders();
 
     expect($headers)->toBe([
         'Accept' => 'text/event-stream',
@@ -15,7 +15,7 @@ it('returns default headers for Server-Sent Events', function (): void {
 });
 
 it('returns default config for Server-Sent Events', function (): void {
-    $config = (new TestRequest())->getDefaultConfig();
+    $config = new TestRequest()->getDefaultConfig();
 
     expect($config)->toBe([
         'stream' => true,
@@ -24,7 +24,7 @@ it('returns default config for Server-Sent Events', function (): void {
 });
 
 it('sets the correct response class', function (): void {
-    $class = (new TestRequest())->resolveResponseClass();
+    $class = new TestRequest()->resolveResponseClass();
 
     expect($class)->toBe(SSEResponse::class);
 });
