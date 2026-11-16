@@ -18,9 +18,13 @@
             "email": "hosmelq@gmail.com"
         }
     ],
+    "homepage": "https://hosmelq.com/docs/sse-saloon",
+    "support": {
+        "docs": "https://hosmelq.com/docs/sse-saloon"
+    },
     "require": {
         "php": "^8.4",
-        "hosmelq/sse": "^0.1.0",
+        "hosmelq/sse": "^1.0",
         "saloonphp/saloon": "^4.0"
     },
     "require-dev": {

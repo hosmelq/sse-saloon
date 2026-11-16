@@ -2,9 +2,5 @@ includes:
   - vendor/hosmelq/php-coding-standard/config/phpstan-php.neon
 
 parameters:
-  ignoreErrors:
-    -
-      identifier: trait.unused
-      path: src/Traits/HasServerSentEvents.php
   paths:
     - src

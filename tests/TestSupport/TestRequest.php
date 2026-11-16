@@ -14,16 +14,6 @@ final class TestRequest extends Request
 
     protected Method $method = Method::GET;
 
-    public function getDefaultConfig(): array
-    {
-        return $this->defaultConfig();
-    }
-
-    public function getDefaultHeaders(): array
-    {
-        return $this->defaultHeaders();
-    }
-
     public function resolveEndpoint(): string
     {
         return '/sse';
